@@ -1,0 +1,70 @@
+Esta es mi segunda prueba en Git
+
+Resumen de Git: 
+
+ 
+
+Comando 
+
+ 
+
+Descripción 
+
+ 
+
+$ git --version 
+
+Verifica la versión de Git. 
+
+$ git config --global credential.helper wincred 
+
+Este te permite indicar que las credenciales en Windows. 
+
+$ git config --global credential.helper cache 
+
+En Linux este te permite indicar que las credenciales se Cacheen. 
+
+git config --global credential.helper 'cache --timeout=10800' 
+
+Este otro comando te permite que las credenciales permanezcan cacheadas por el tiempo que tú estimes conveniente. El tiempo se indica en segundos. Por ejemplo, para cachear las credenciales por 3 horas lanzas el siguiente comando. 
+
+$ git config --global user.name “jose armando” 
+
+Comando para establecer el nombre de usuario de git. 
+
+$ git config --global user.email "jaavendano@soy.sena.edu.co" 
+
+Ahora indique el correo electrónico del usuario para git. 
+
+$ git config --list 
+
+Se mostrarán los nuevos valores configurados al final, y otros valores de configuración Predeterminados. 
+
+$ git init 
+
+Comando para crear un nuevo repositorio. 
+
+$ git remote add <origin> < https://github.com/ja12as/Git_jos_avs.git > 
+
+Este comando va a tomar el alias nuestro repositorio y la url de nuestro repositorio en GitHub, con esto va a vincularlo con nuestro repositorio local. 
+
+$ git status 
+
+El comando de git status nos da toda la información necesaria sobre la rama actual. 
+
+$ git add <archivo> 
+
+Añade un único archivo. 
+
+$ git add . 
+
+Añade todo de una vez. 
+
+$ git commit -m "mensaje de confirmación" 
+
+Hacemos un commit para guardar nuestro archivo(documento) y le ponemos un mensaje que explique que hemos hecho. 
+
+$ git push <nombre-remoto> <nombre-de-tu-rama> 
+
+Envía tus commits al repositorio remoto. 
+
